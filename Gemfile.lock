@@ -14,6 +14,8 @@ GEM
       activesupport (= 4.1.6)
       builder (~> 3.1)
       erubis (~> 2.7.0)
+    active_model_serializers (0.9.0)
+      activemodel (>= 3.2)
     activemodel (4.1.6)
       activesupport (= 4.1.6)
       builder (~> 3.1)
@@ -31,6 +33,9 @@ GEM
     builder (3.2.2)
     erubis (2.7.0)
     hike (1.2.3)
+    httparty (0.13.2)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.6.11)
     json (1.8.1)
     mail (2.6.3)
@@ -38,8 +43,10 @@ GEM
     mime-types (2.4.3)
     minitest (5.4.3)
     multi_json (1.10.1)
+    multi_xml (0.5.5)
     pg (0.17.1)
     rack (1.5.2)
+    rack-cors (0.2.9)
     rack-test (0.6.2)
       rack (>= 1.0)
     rails (4.1.6)
@@ -55,6 +62,11 @@ GEM
     rails-api (0.3.1)
       actionpack (>= 3.2.11)
       railties (>= 3.2.11)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.2)
+    rails_stdout_logging (0.0.3)
     railties (4.1.6)
       actionpack (= 4.1.6)
       activesupport (= 4.1.6)
@@ -71,6 +83,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
+    table_print (1.5.3)
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
@@ -81,7 +94,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers
+  httparty
   pg
+  rack-cors
   rails (= 4.1.6)
   rails-api
+  rails_12factor
   spring
+  table_print

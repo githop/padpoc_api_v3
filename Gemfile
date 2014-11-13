@@ -10,6 +10,15 @@ gem 'spring', :group => :development
 
 gem 'pg'
 
+gem 'rack-cors', :require => 'rack/cors'
+
+gem "active_model_serializers"
+
+gem 'table_print', group: :development
+gem 'httparty'
+
+gem 'rails_12factor', :group => :production
+
 
 
 # To use ActiveModel has_secure_password
