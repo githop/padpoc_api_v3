@@ -100,4 +100,4 @@
             transform: rotate(450deg);
   }
 }
-       ]]></style><circle class="path" cx="33" cy="33" r="30" fill="none"/></svg>
+       ]]></style><circle class="path" stroke-width="6" cx="33" cy="33" r="30" fill="none"/></svg>
