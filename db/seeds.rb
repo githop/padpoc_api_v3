@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 require 'csv'
 
-CSV.foreach("..db/politicians.csv", headers:true) do |row|
+CSV.foreach("db/politicians.csv", headers:true) do |row|
 	regexp = /([0-9]{0,2})\/([0-9]{0,2})\/([0-9]{4})/
 	d = regexp.match(row['birthdate'])
 	Politician.create(title: row['title'], firstname: row['firstname'], lastname: row['lastname'],
@@ -21,7 +21,7 @@ end
 
 # csv file has no headers format is
 # zip, state, district
-CSV.foreach("..db/zips.csv") do |i|
+CSV.foreach("db/zips.csv") do |i|
 	zip_code = Zipcode.new(zip: i[0])
 	pol = Politician.where('state = ? AND district = ?', i[1], i[2]).first
 	if !pol.nil?
@@ -30,7 +30,7 @@ CSV.foreach("..db/zips.csv") do |i|
 	end
 end
 
-CSV.foreach("..db/entity_ids.csv") do |row|
+CSV.foreach("db/entity_ids.csv") do |row|
 	p = Politician.find(row[0])
 	p.entity_id = row[1]
 	p.full_name = "#{p.firstname} #{p.lastname}"
