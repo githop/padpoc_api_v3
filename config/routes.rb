@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :industries, except: [:new, :edit]
   resources :zipcodes, except: [:new, :edit]
   resources :politicians, except: [:new, :edit]
   # The priority is based upon order of creation: first created -> highest priority.
