@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-require 'CSV'
+require 'csv'
 
 CSV.foreach("..db/politicians.csv", headers:true) do |row|
 	regexp = /([0-9]{0,2})\/([0-9]{0,2})\/([0-9]{4})/
