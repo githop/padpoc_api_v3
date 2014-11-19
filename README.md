@@ -22,7 +22,8 @@ contain the meat of the project.
 
 ###JSON
 Here is a raw json feed of a search result
-  ...
+  
+```
     [
   {
     "id": 238,
@@ -41,8 +42,9 @@ Here is a raw json feed of a search result
     "drive_id": "0B9oZ9Poh4Y5NTWdReFhRSjktT0k"
   }
   ...
-
+```
 Here is a single politician object with it's contributions
+```
     
 {
   "id": 12,
@@ -117,6 +119,7 @@ Here is a single politician object with it's contributions
       {...},
       {...},
       {...},
+```
       {...}
     ]
   }
