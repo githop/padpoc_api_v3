@@ -45,7 +45,6 @@ Here is a raw json feed of a search result
 ```
 Here is a single politician object with it's contributions
 ```
-    
 {
   "id": 12,
   "full_name": "John Boehner",
@@ -119,8 +118,8 @@ Here is a single politician object with it's contributions
       {...},
       {...},
       {...},
-```
       {...}
     ]
   }
 }
+```
