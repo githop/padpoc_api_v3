@@ -5,10 +5,10 @@ see it [live on heroku](https://floating-springs-6532.herokuapp.com/)
 
 ###Dependencies
 gems:
-rails-api gem
-active_model_serializers gem
-rack-cors gem
-httparty
+* rails-api
+* active_model_serializers
+* rack-cors
+* httparty
 
 ###The App
 This half of padded pockets is responsible for the following:
