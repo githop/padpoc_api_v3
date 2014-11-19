@@ -18,6 +18,7 @@ gem 'table_print', group: :development
 gem 'httparty'
 
 gem 'rails_12factor', :group => :production
+gem 'unicorn', :group => :production
 
 
 
